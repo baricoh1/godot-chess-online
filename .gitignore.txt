@@ -1,0 +1,35 @@
+# Godot-specific
+.import/
+.export/
+*.import
+*.translation
+*.godot
+*.tres
+*.res
+*.tscn.tmp
+
+# User-specific and system files
+*.cfg
+*.log
+*.tmp
+*.db
+*.DS_Store
+*.sublime-workspace
+*.vscode/
+*.vs/
+*.idea/
+
+# Godot metadata files (not needed)
+*.gd.uid
+
+# Windows system junk
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Godot project exports
+/build/
+export_presets.cfg
+
+# Backup files
+*~

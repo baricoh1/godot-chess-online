@@ -1,0 +1,82 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfvu25qkd34f6"]
+
+[ext_resource type="Script" uid="uid://pygv6e0n06j4" path="res://scripts/online_lobby.gd" id="1_csday"]
+[ext_resource type="FontFile" uid="uid://binnamcsbaeja" path="res://assets/fonts/Abaddon_Bold.ttf" id="3_31750"]
+
+[node name="join_lobby" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_csday")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.00390625
+anchor_right = 1.0
+anchor_bottom = 0.996094
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.745098, 0.639216, 0.501961, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 17.0
+offset_right = 192.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("3_31750")
+
+[node name="Title2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.0
+offset_top = -82.0
+offset_right = 37.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_31750")
+theme_override_font_sizes/font_size = 16
+text = "Enter a friend code:"
+uppercase = true
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 170.563
+offset_top = 38.0
+offset_right = 239.125
+offset_bottom = 69.0
+theme_override_fonts/font = ExtResource("3_31750")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 178.0
+offset_right = 175.0
+offset_bottom = 204.0
+theme_override_fonts/font = ExtResource("3_31750")
+text = "Start a game"
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+title = "Room found!"
+initial_position = 1
+size = Vector2i(202, 100)
+dialog_text = "Game is about to start…"
+
+[node name="DeclineDialog" type="AcceptDialog" parent="."]
+auto_translate_mode = 1
+title = ""
+initial_position = 1
+size = Vector2i(257, 100)
+dialog_text = "No such room exists. Try again."
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,189 @@
+[gd_scene load_steps=11 format=3 uid="uid://b634adfp7fyhr"]
+
+[ext_resource type="FontFile" uid="uid://binnamcsbaeja" path="res://assets/fonts/Abaddon_Bold.ttf" id="1_le1d8"]
+[ext_resource type="Script" uid="uid://b3akubyfnoumi" path="res://scripts/bot_selection_page.gd" id="1_xpt45"]
+[ext_resource type="Texture2D" uid="uid://be0gpyg266skg" path="res://assets/Logan_bot.png" id="2_lt2p8"]
+[ext_resource type="Texture2D" uid="uid://c68m3mkko7cci" path="res://assets/Logan_bot_selected.png" id="3_euj6g"]
+[ext_resource type="Texture2D" uid="uid://dqnx2uwgww7ou" path="res://assets/Lina_Bot.png" id="5_y2w6k"]
+[ext_resource type="Texture2D" uid="uid://d2r4th103dd61" path="res://assets/Lina_Bot_Selected.png" id="6_afaxr"]
+[ext_resource type="Texture2D" uid="uid://bfg2vdfiwc2xj" path="res://assets/Dave_Bot.png" id="7_fl8yw"]
+[ext_resource type="Texture2D" uid="uid://dk1re127ujhjo" path="res://assets/Dave_Bot_Selected.png" id="8_cjfni"]
+[ext_resource type="Texture2D" uid="uid://dvw76307uxth5" path="res://assets/Walter_Bot.png" id="9_xylqb"]
+[ext_resource type="Texture2D" uid="uid://dyonqw6wqaoqc" path="res://assets/Walter_Bot_Selected.png" id="10_fm4m2"]
+
+[node name="bot_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xpt45")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.745098, 0.639216, 0.501961, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.0
+offset_top = -123.0
+offset_right = 48.0
+offset_bottom = -84.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_le1d8")
+theme_override_font_sizes/font_size = 16
+text = "Select a bot 
+"
+uppercase = true
+
+[node name="Title2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.0
+offset_top = -106.0
+offset_right = 100.0
+offset_bottom = -67.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_le1d8")
+theme_override_font_sizes/font_size = 16
+text = "you'd like to play against:"
+uppercase = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+offset_left = 146.0
+offset_top = 44.0
+offset_right = 229.0
+offset_bottom = 119.0
+texture_normal = ExtResource("2_lt2p8")
+texture_hover = ExtResource("3_euj6g")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 45.0
+offset_right = 112.0
+offset_bottom = 120.0
+texture_normal = ExtResource("5_y2w6k")
+texture_hover = ExtResource("6_afaxr")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 148.0
+offset_right = 228.0
+offset_bottom = 223.0
+texture_normal = ExtResource("7_fl8yw")
+texture_hover = ExtResource("8_cjfni")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Title4" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -92.0
+offset_top = -3.0
+offset_right = -19.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_le1d8")
+theme_override_font_sizes/font_size = 16
+text = "DARIA 900"
+uppercase = true
+
+[node name="Title3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 24.0
+offset_top = -3.0
+offset_right = 97.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_le1d8")
+theme_override_font_sizes/font_size = 16
+text = "Logan 400"
+uppercase = true
+
+[node name="Title5" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -98.0
+offset_top = 101.0
+offset_right = -11.0
+offset_bottom = 119.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_le1d8")
+theme_override_font_sizes/font_size = 16
+text = "Wolter 2000"
+uppercase = true
+
+[node name="TextureButton4" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 150.0
+offset_right = 114.0
+offset_bottom = 225.0
+texture_normal = ExtResource("9_xylqb")
+texture_hover = ExtResource("10_fm4m2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Title6" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 24.0
+offset_top = 100.0
+offset_right = 97.0
+offset_bottom = 118.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_le1d8")
+theme_override_font_sizes/font_size = 16
+text = "Dave 1500"
+uppercase = true
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_texture_button_3_pressed"]
+[connection signal="pressed" from="TextureButton4" to="." method="_on_texture_button_4_pressed"]

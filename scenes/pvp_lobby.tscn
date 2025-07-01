@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://cktuy5gxbxdek"]
+
+[ext_resource type="Script" uid="uid://m8f4mq6qiq7h" path="res://scripts/pvp_lobby.gd" id="1_doytw"]
+[ext_resource type="FontFile" uid="uid://binnamcsbaeja" path="res://assets/fonts/Abaddon_Bold.ttf" id="2_xkcei"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_doytw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.00390625
+anchor_right = 1.0
+anchor_bottom = 0.996094
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.745098, 0.639216, 0.501961, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 245.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("2_xkcei")
+text = "Create Room"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 61.0
+offset_right = 114.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("2_xkcei")
+text = "Join Room"
+
+[connection signal="pressed" from="Button" to="." method="_on_create_room_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_join_room_pressed"]

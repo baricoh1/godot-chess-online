@@ -1,0 +1,4 @@
+res://scenes/game.tscn
+res://assets/main_theme.tres
+res://assets/promote_menu.tres
+res://scripts/online_lobby.gd
