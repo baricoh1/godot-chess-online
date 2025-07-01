@@ -86,7 +86,6 @@ var url = "https://<your-render-stockfish-server-url>/move"  # ← replace this 
 /scripts/
   ├─ MultiplayerManager.gd
   ├─ StockfishBot.gd
-  ├─ CapturedUI.gd
   ├─ CloudStockfishBot.gd
   ├─ create.gd
   ├─ create_room.gd
