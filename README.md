@@ -110,7 +110,7 @@ MIT
 ---
 
 ## 🤝 Credits
-- Developed by **[Your Name]**
+- Developed by **[baricoh1]**
 - Inspired by [AnimePenguin/Chess-Godot](https://github.com/AnimePenguin/Chess-Godot)
 - Stockfish engine: [https://stockfishchess.org](https://stockfishchess.org)
 - Firebase Realtime DB: [https://firebase.google.com](https://firebase.google.com)
