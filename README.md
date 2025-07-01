@@ -118,4 +118,3 @@ MIT – do whatever you want, just give credit.
 
 ---
 
-Want to contribute? PRs welcome!
