@@ -1,35 +1,34 @@
-# Godot-specific
+# 🐙 Godot temporary and generated files
 .import/
-.export/
 *.import
 *.translation
-*.godot
-*.tres
-*.res
 *.tscn.tmp
+*.godot
 
-# User-specific and system files
-*.cfg
+# 🔧 Editor and user-specific cache/config
+.godot/
+export_presets.cfg
+export_credentials
+global_script_class_cache
+scene_groups_cache
+uid_cache.bin
+
+# 🗂️ Metadata files
+*.gd.uid
+
+# 💣 System junk
 *.log
 *.tmp
 *.db
 *.DS_Store
 *.sublime-workspace
-*.vscode/
-*.vs/
-*.idea/
-
-# Godot metadata files (not needed)
-*.gd.uid
-
-# Windows system junk
+.vscode/
+.idea/
+*.cfg
 Thumbs.db
 ehthumbs.db
 desktop.ini
 
-# Godot project exports
-/build/
-export_presets.cfg
-
-# Backup files
-*~
+# 🔄 Build and export folders (if any)
+build/
+export/
