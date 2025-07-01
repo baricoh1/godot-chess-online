@@ -111,8 +111,10 @@ MIT – do whatever you want, just give credit.
 
 ## 🤝 Credits
 - Developed by **[Your Name]**
-- Stockfish engine: https://stockfishchess.org/
-- Firebase Realtime DB by Google
+- Inspired by [AnimePenguin/Chess-Godot](https://github.com/AnimePenguin/Chess-Godot)
+- Stockfish engine: [https://stockfishchess.org](https://stockfishchess.org)
+- Firebase Realtime DB: [https://firebase.google.com](https://firebase.google.com)
+- Render cloud hosting: [https://render.com](https://render.com)se Realtime DB by Google
 
 ---
 
