@@ -115,6 +115,7 @@ MIT
 - Stockfish engine: [https://stockfishchess.org](https://stockfishchess.org)
 - Firebase Realtime DB: [https://firebase.google.com](https://firebase.google.com)
 - Render cloud hosting: [https://render.com](https://render.com)
+- Font by Caffinate
 
 ---
 
