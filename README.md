@@ -28,7 +28,9 @@ Supports real-time 1v1 multiplayer and matches against a powerful AI opponent.
 
 ## 📸 Screenshots
 
-_Add your own screenshots here_
+![Screenshot 1](assets/screen_1.png)
+![Screenshot 2](assets/screen_2.png)
+![Screenshot 3](assets/screen_3.png)
 
 ---
 
