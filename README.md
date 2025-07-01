@@ -38,7 +38,7 @@ Supports real-time 1v1 multiplayer and matches against a powerful AI opponent.
 
 ### 1. Clone this repo
 ```bash
-git clone https://github.com/your-username/godot-chess.git
+git clone https://github.com/baricoh1/godot-chess.git
 cd godot-chess
 ```
 
@@ -50,9 +50,13 @@ In `MultiplayerManager.gd`, update this line:
 ```gdscript
 const FIREBASE_HOST = "<your-firebase-db>.firebaseio.com"
 ```
-
 ### 4. Stockfish AI (optional)
-Deploy the `stockfish-server` folder (or use your own) to **Render** or any other cloud platform. Make sure the URL is set in your AI node script.
+Deploy the `stockfish_server` to **Render** or any other cloud platform. Make sure the URL is set in your AI node script.
+In `CloudStockfishBot.gd`, update this line:
+```gdscript
+var url = "https://<your-render-stockfish-server-url>/move"  # ← replace this with your own
+```
+
 
 ---
 
