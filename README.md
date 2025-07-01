@@ -105,7 +105,7 @@ var url = "https://<your-render-stockfish-server-url>/move"  # ← replace this 
 
 
 ## 📜 License
-MIT – do whatever you want, just give credit.
+MIT
 
 ---
 
