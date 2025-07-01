@@ -74,13 +74,35 @@ var url = "https://<your-render-stockfish-server-url>/move"  # ← replace this 
 /scenes/
   ├─ main_menu.tscn
   ├─ game.tscn
+  ├─ game_mod_bot.tscn
+  ├─ bot_selection_board.tscn
+  ├─ create_room.tscn
+  ├─ join_lobby.tscn
+  ├─ online_lobby.tscn
+  ├─ pvp_lobby.tscn
+  ├─ piece.tscn
+  ├─ falling_piece.tscn
+
 /scripts/
   ├─ MultiplayerManager.gd
   ├─ StockfishBot.gd
-  └─ CapturedUI.gd
+  ├─ CapturedUI.gd
+  ├─ CloudStockfishBot.gd
+  ├─ create.gd
+  ├─ create_room.gd
+  ├─ ColorSelect.gd
+  ├─ falling_piece.gd
+  ├─ global.gd
+  ├─ board.gd
+  ├─ moves.gd
+  ├─ piece.gd
+  ├─ online_lobby.gd
+  ├─ pvp_lobby.gd
+  ├─ util_functions.gd
 ```
 
 ---
+
 
 ## 📜 License
 MIT – do whatever you want, just give credit.
